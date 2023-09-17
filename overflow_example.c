@@ -20,6 +20,20 @@ void BufferPassword() {
     }
 }
 
+void UndefinedBehavior() {
+    int arr[5];
+    int i;
+
+    for(i = 0; i <= 5; i++) {
+        arr[i] = i;
+    }
+
+    for(i = 0; i <= 5; i++) {
+        printf("%d ", arr[i]);
+    }
+}
+
 int main() {
-    BufferPassword();
+    UndefinedBehavior();
+//    BufferPassword();
 }
